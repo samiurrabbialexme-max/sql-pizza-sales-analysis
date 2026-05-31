@@ -1,62 +1,92 @@
-# 🍕 Pizza Sales SQL Analysis Project Report
+# 🍕 Pizza Sales Analytics Project
 
-## 1. Introduction
+## 📌 Project Overview
 
-### Project Background
+This project analyzes pizza sales data using **SQL**, **Python**, and **Data Visualization** techniques to uncover business insights related to customer behavior, product performance, sales trends, and revenue generation.
 
-Businesses rely heavily on data analytics to understand customer behavior, improve operational efficiency, and maximize revenue. This project focuses on analyzing pizza sales data using SQL to uncover valuable business insights regarding sales performance, product popularity, customer ordering behavior, and revenue generation.
-
-### Project Objectives
-
-- Analyze overall sales performance.
-- Calculate total revenue generated.
-- Identify top-selling pizza products.
-- Understand customer ordering patterns.
-- Discover peak business hours.
-- Analyze category-wise performance.
-- Measure revenue contribution by products.
-- Generate actionable business recommendations.
-
-### Technologies Used
-
-- MySQL
-- SQL
-- Git & GitHub
-- Excel / Power BI
+The goal is to transform raw transactional data into actionable business intelligence through structured querying, exploratory data analysis (EDA), and visualization.
 
 ---
 
-## 2. Dataset Overview
+## 🎯 Objectives
 
-The dataset consists of four relational tables:
+* Analyze overall sales performance.
+* Calculate total revenue generated.
+* Identify top-selling pizza products.
+* Understand customer ordering behavior.
+* Discover peak business hours.
+* Analyze category and size preferences.
+* Measure revenue contribution by products.
+* Create visual reports and dashboards.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology       | Purpose              |
+| ---------------- | -------------------- |
+| MySQL            | Database & Querying  |
+| SQL              | Data Analysis        |
+| Python           | Data Processing      |
+| Pandas           | Data Manipulation    |
+| Matplotlib       | Data Visualization   |
+| Git & GitHub     | Version Control      |
+| Jupyter Notebook | Exploratory Analysis |
+
+---
+
+## 📂 Dataset Structure
+
+The dataset contains four relational tables:
 
 ### Orders
-- order_id
-- date
-- time
+
+Stores order-level information.
+
+| Column   |
+| -------- |
+| order_id |
+| date     |
+| time     |
 
 ### Order Details
-- order_details_id
-- order_id
-- pizza_id
-- quantity
+
+Stores transaction details.
+
+| Column           |
+| ---------------- |
+| order_details_id |
+| order_id         |
+| pizza_id         |
+| quantity         |
 
 ### Pizzas
-- pizza_id
-- pizza_type_id
-- size
-- price
+
+Stores pizza pricing and size information.
+
+| Column        |
+| ------------- |
+| pizza_id      |
+| pizza_type_id |
+| size          |
+| price         |
 
 ### Pizza Types
-- pizza_type_id
-- name
-- category
-- ingredients
+
+Stores pizza metadata.
+
+| Column        |
+| ------------- |
+| pizza_type_id |
+| name          |
+| category      |
+| ingredients   |
 
 ---
 
-## 3. Database Schema
+## 🗄️ Database Schema
 
+```text
 Orders
 │
 ├── Order Details
@@ -64,106 +94,150 @@ Orders
 ├── Pizzas
 │
 └── Pizza Types
+```
 
 ---
 
-## 4. Business Questions
+## 🔍 Business Questions
 
 ### Basic Analysis
 
-1. Retrieve the total number of orders placed.
-2. Calculate total revenue generated.
-3. Identify the highest-priced pizza.
-4. Identify the most common pizza size ordered.
-5. List the top 5 most ordered pizza types.
+* Total number of orders placed
+* Total revenue generated
+* Highest-priced pizza
+* Most common pizza size ordered
+* Top 5 most ordered pizza types
 
 ### Intermediate Analysis
 
-6. Find total quantity sold by category.
-7. Determine order distribution by hour.
-8. Find category-wise distribution.
-9. Calculate average pizzas ordered per day.
-10. Identify top 3 pizzas by revenue.
+* Quantity sold by category
+* Orders distribution by hour
+* Category-wise sales analysis
+* Average pizzas ordered per day
+* Top 3 pizzas by revenue
 
 ### Advanced Analysis
 
-11. Calculate revenue contribution percentage.
-12. Analyze cumulative revenue over time.
+* Revenue contribution by pizza type
+* Cumulative revenue analysis
 
 ---
 
-## 5. SQL Solutions
+## 📊 Python Analytics & Visualizations
 
-### SQL Concepts Used
+The project extends beyond SQL analysis by performing Exploratory Data Analysis (EDA) using Python.
 
-- SELECT
-- WHERE
-- GROUP BY
-- ORDER BY
-- INNER JOIN
-- Aggregate Functions
-- Subqueries
-- Window Functions
+### Revenue Analysis
+
+* Revenue by Category
+* Revenue Trend Over Time
+* Monthly Revenue Analysis
+
+### Product Analysis
+
+* Top 10 Revenue Generating Pizzas
+* Top 10 Most Ordered Pizzas
+* Category Performance
+
+### Customer Behavior Analysis
+
+* Orders by Hour
+* Orders by Day of Week
+* Weekend vs Weekday Analysis
+
+### Product Preference Analysis
+
+* Pizza Size Distribution
+* Revenue Contribution Analysis
+* Pareto (80/20) Analysis
 
 ---
 
-## 6. Results
-
-### Key Findings
-
-- Calculated total orders and revenue.
-- Identified highest-priced pizza.
-- Determined most popular pizza size.
-- Found top-selling pizza types.
-- Analyzed peak order hours.
-- Measured category performance.
-- Identified highest revenue-generating pizzas.
-
----
-
-## 7. Insights
+## 📈 Key Insights
 
 ### Customer Behavior
 
-- Orders peak during lunch and dinner hours.
-- Large pizzas are the most popular size.
-- A small number of pizzas account for most sales.
+* Customer demand peaks during lunch and dinner hours.
+* Large pizzas are the most frequently ordered size.
+* A small number of pizza types account for a large percentage of total sales.
 
 ### Revenue Insights
 
-- Revenue is concentrated among top-performing pizzas.
-- Certain categories consistently outperform others.
+* Revenue is concentrated among a handful of high-performing pizzas.
+* Certain pizza categories consistently outperform others.
+* Peak sales periods present opportunities for operational optimization.
 
 ---
 
-## 8. Recommendations
+## 💡 Business Recommendations
 
-### 1. Promote Best-Selling Pizzas
-
-Increase visibility of top-performing pizzas through promotions and featured menu placement.
-
-### 2. Optimize Peak-Hour Operations
-
-Schedule more staff during lunch and dinner rush periods.
-
-### 3. Improve Low-Selling Products
-
-Use discounts and combo offers to boost demand.
-
-### 4. Expand High-Revenue Categories
-
-Introduce additional pizzas within successful categories.
-
-### 5. Build a Business Dashboard
-
-Track KPIs such as:
-- Revenue
-- Orders
-- Category Performance
-- Hourly Trends
+* Promote top-performing pizzas through targeted marketing campaigns.
+* Optimize staffing during peak ordering hours.
+* Increase visibility of low-performing products through discounts and bundle offers.
+* Expand successful pizza categories with new menu options.
+* Build an interactive business dashboard for real-time monitoring.
 
 ---
 
-## Conclusion
+## 📁 Repository Structure
 
-This project demonstrates practical SQL skills through real-world business analysis. Using joins, aggregations, subqueries, and window functions, valuable insights were generated regarding customer behavior, product performance, and revenue trends.
+```text
+pizza-sales-sql-analysis/
+│
+├── README.md
+│
+├── data/
+│
+├── sql/
+│   ├── basic_queries.sql
+│   ├── intermediate_queries.sql
+│   └── advanced_queries.sql
+│
+├── python/
+│   ├── analysis.py
+│   ├── visualization.py
+│   └── data_cleaning.py
+│
+├── notebooks/
+│   └── pizza_sales_analysis.ipynb
+│
+├── images/
+│
+├── docs/
+│   └── project_report.md
+│
+└── LICENSE
+```
+
+---
+
+## 🚀 Skills Demonstrated
+
+* SQL Querying
+* Relational Database Analysis
+* Data Cleaning
+* Exploratory Data Analysis (EDA)
+* Data Visualization
+* Business Intelligence
+* Revenue Analysis
+* Git & GitHub
+
+---
+
+## 📜 Project Report
+
+A detailed project report is available in:
+
+```text
+docs/project_report.md
+```
+
+---
+
+## 👨‍💻 Author
+
+**Samiur Rahman**
+
+Aspiring AI Engineer | Data Analytics Enthusiast | Machine Learning Learner
+
+Connect with me through GitHub and LinkedIn.
