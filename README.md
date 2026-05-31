@@ -1,67 +1,242 @@
-# Pizza Sales SQL Analysis
+# 🍕 Pizza Sales Analytics Project
 
-## Project Overview
+![SQL](https://img.shields.io/badge/SQL-MySQL-blue)
+![Python](https://img.shields.io/badge/Python-Data_Analysis-green)
+![Analytics](https://img.shields.io/badge/Project-Business_Analytics-orange)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
-End-to-end SQL data analysis project using Pizza Sales data to answer business questions related to revenue, customer behavior, product performance, and sales trends.
+## 📌 Project Overview
 
-## Business Questions
+This project analyzes pizza sales data using **SQL**, **Python**, and **Data Visualization** techniques to uncover business insights related to customer behavior, product performance, sales trends, and revenue generation.
 
-Basic:
+The goal is to transform raw transactional data into actionable business intelligence through structured querying, exploratory data analysis (EDA), and visualization.
 
-Retrieve the total number of orders placed.
+---
 
-Calculate the total revenue generated from pizza sales.
+## 🎯 Objectives
 
-Identify the highest-priced pizza.
+* Analyze overall sales performance.
+* Calculate total revenue generated.
+* Identify top-selling pizza products.
+* Understand customer ordering behavior.
+* Discover peak business hours.
+* Analyze category and size preferences.
+* Measure revenue contribution by products.
+* Create visual reports and dashboards.
 
-Identify the most common pizza size ordered.
+---
 
-List the top 5 most ordered pizza types along with their quantities.
+## 🛠️ Tech Stack
 
+| Technology       | Purpose              |
+| ---------------- | -------------------- |
+| MySQL            | Database & Querying  |
+| SQL              | Data Analysis        |
+| Python           | Data Processing      |
+| Pandas           | Data Manipulation    |
+| Matplotlib       | Data Visualization   |
+| Git & GitHub     | Version Control      |
+| Jupyter Notebook | Exploratory Analysis |
 
+---
 
+## 📂 Dataset Structure
 
+The dataset contains four relational tables:
 
-Intermediate:
+### Orders
 
-Join the necessary tables to find the total quantity of each pizza category ordered.
+Stores order-level information.
 
-Determine the distribution of orders by hour of the day.
+| Column   |
+| -------- |
+| order_id |
+| date     |
+| time     |
 
-Join relevant tables to find the category-wise distribution of pizzas.
+### Order Details
 
-Group the orders by date and calculate the average number of pizzas ordered per day.
+Stores transaction details.
 
-Determine the top 3 most ordered pizza types based on revenue.
+| Column           |
+| ---------------- |
+| order_details_id |
+| order_id         |
+| pizza_id         |
+| quantity         |
 
+### Pizzas
 
+Stores pizza pricing and size information.
 
-Advanced:
+| Column        |
+| ------------- |
+| pizza_id      |
+| pizza_type_id |
+| size          |
+| price         |
 
-Calculate the percentage contribution of each pizza type to total revenue.
+### Pizza Types
 
-Analyze the cumulative revenue generated over time.
+Stores pizza metadata.
 
-## Repository Structure
+| Column        |
+| ------------- |
+| pizza_type_id |
+| name          |
+| category      |
+| ingredients   |
 
-* data/
-* sql/
-* results/
-* images/
-* python/
-* docs/
+---
 
-## Skills Demonstrated
+## 🗄️ Database Schema
 
-* SQL Joins
-* Aggregations
-* Group By
-* Subqueries
-* CTEs
-* Window Functions
-* Business Analytics
+```text
+Orders
+│
+├── Order Details
+│
+├── Pizzas
+│
+└── Pizza Types
+```
 
-## Resume Bullet
+---
 
-Analyzed pizza sales data using SQL across multiple relational tables, generating business insights on revenue, ordering behavior, and product performance.
+## 🔍 Business Questions
 
+### Basic Analysis
+
+* Total number of orders placed
+* Total revenue generated
+* Highest-priced pizza
+* Most common pizza size ordered
+* Top 5 most ordered pizza types
+
+### Intermediate Analysis
+
+* Quantity sold by category
+* Orders distribution by hour
+* Category-wise sales analysis
+* Average pizzas ordered per day
+* Top 3 pizzas by revenue
+
+### Advanced Analysis
+
+* Revenue contribution by pizza type
+* Cumulative revenue analysis
+
+---
+
+## 📊 Python Analytics & Visualizations
+
+The project extends beyond SQL analysis by performing Exploratory Data Analysis (EDA) using Python.
+
+### Revenue Analysis
+
+* Revenue by Category
+* Revenue Trend Over Time
+* Monthly Revenue Analysis
+
+### Product Analysis
+
+* Top 10 Revenue Generating Pizzas
+* Top 10 Most Ordered Pizzas
+* Category Performance
+
+### Customer Behavior Analysis
+
+* Orders by Hour
+* Orders by Day of Week
+* Weekend vs Weekday Analysis
+
+### Product Preference Analysis
+
+* Pizza Size Distribution
+* Revenue Contribution Analysis
+* Pareto (80/20) Analysis
+
+---
+
+## 📈 Key Insights
+
+### Customer Behavior
+
+* Customer demand peaks during lunch and dinner hours.
+* Large pizzas are the most frequently ordered size.
+* A small number of pizza types account for a large percentage of total sales.
+
+### Revenue Insights
+
+* Revenue is concentrated among a handful of high-performing pizzas.
+* Certain pizza categories consistently outperform others.
+* Peak sales periods present opportunities for operational optimization.
+
+---
+
+## 💡 Business Recommendations
+
+* Promote top-performing pizzas through targeted marketing campaigns.
+* Optimize staffing during peak ordering hours.
+* Increase visibility of low-performing products through discounts and bundle offers.
+* Expand successful pizza categories with new menu options.
+* Build an interactive business dashboard for real-time monitoring.
+
+---
+
+## 📁 Repository Structure
+
+```text
+pizza-sales-sql-analysis/
+│
+├── README.md
+│
+├── data/
+│
+├── sql/
+│   ├── pizza_sales_analysis.sql
+│
+├── python/
+│   ├── pizza_sales_data_analysis.py
+│
+│
+├── images/
+│
+├── docs/
+│   └── project_report.md
+│
+└── LICENSE
+```
+
+---
+
+## 🚀 Skills Demonstrated
+
+* SQL Querying
+* Relational Database Analysis
+* Data Cleaning
+* Exploratory Data Analysis (EDA)
+* Data Visualization
+* Business Intelligence
+* Revenue Analysis
+* Git & GitHub
+
+---
+
+## 📜 Project Report
+
+A detailed project report is available in:
+
+```text
+docs/project_report.md
+```
+
+---
+
+## 👨‍💻 Author
+
+**Samiur Rabbi Alex**
+
+Aspiring AI Engineer | Data Analytics Enthusiast | Machine Learning Learner
+
+Connect with me through GitHub and LinkedIn.
