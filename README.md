@@ -230,7 +230,7 @@ A detailed project report is available in:
 ```text
 docs/project_report.md
 ```
-
+Google Colab Link - https://colab.research.google.com/drive/1ksFSlAS-PI4_6rOWsZzm-L6CdviQR6pM?usp=sharing 
 ---
 
 ## 👨‍💻 Author
