@@ -48,6 +48,7 @@ Analyze the cumulative revenue generated over time.
 * sql/
 * results/
 * images/
+* python/
 * docs/
 
 ## Skills Demonstrated
